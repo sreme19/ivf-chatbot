@@ -1,36 +1,37 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# IVF Assistant Chatbot — Dr. Mekhala's Clinic
 
-## Getting Started
+A mobile-first IVF education chatbot built with Next.js 14, TypeScript, Tailwind CSS, and the Anthropic Claude API.
 
-First, run the development server:
+## Setup
+
+1. Clone the repository
+2. Install dependencies: `npm install`
+3. Copy `.env.example` to `.env.local` and fill in your values
+4. Run development server: `npm run dev`
+
+## Environment Variables
+
+| Variable | Description |
+|---|---|
+| `ANTHROPIC_API_KEY` | Your Anthropic API key (server-side only) |
+| `CLAUDE_MODEL` | Claude model to use (e.g. `claude-3-5-sonnet-20241022`) |
+| `NEXT_PUBLIC_CLINIC_PHONE` | Clinic phone number for `tel:` links |
+| `NEXT_PUBLIC_CLINIC_WHATSAPP` | WhatsApp number for `wa.me/` links (digits only) |
+| `NEXT_PUBLIC_BOOKING_URL` | URL for the booking page |
+
+## Deployment (Vercel)
+
+1. Push code to GitHub
+2. Connect the repository to a new Vercel project
+3. Set all environment variables in the Vercel dashboard
+4. Deploy — Vercel auto-detects Next.js
+
+## Running Tests
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm test
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Knowledge Base
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Update `/content/ivf-faq.md` to modify the chatbot's knowledge base. No code changes required.
