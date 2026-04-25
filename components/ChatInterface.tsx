@@ -20,7 +20,6 @@ export default function ChatInterface({ clinicPhone, clinicWhatsApp, bookingUrl 
   ])
   const [isLoading, setIsLoading] = useState(false)
   const [showEmergency, setShowEmergency] = useState(false)
-  const [emergencyMessage, setEmergencyMessage] = useState('')
   const [error, setError] = useState<string | null>(null)
   const messagesEndRef = useRef<HTMLDivElement>(null)
 
@@ -70,7 +69,6 @@ export default function ChatInterface({ clinicPhone, clinicWhatsApp, bookingUrl 
 
       if (data.isEmergency) {
         setShowEmergency(true)
-        setEmergencyMessage(data.emergencyMessage || '')
         emitEvent('emergency_escalation')
       } else {
         const assistantMsg: Message = {

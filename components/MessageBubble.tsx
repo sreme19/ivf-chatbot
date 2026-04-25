@@ -24,7 +24,7 @@ function renderContent(content: string): React.ReactNode {
   })
 }
 
-export default function MessageBubble({ message, isLatest }: MessageBubbleProps) {
+export default function MessageBubble({ message }: MessageBubbleProps) {
   const isUser = message.role === 'user'
 
   return (
