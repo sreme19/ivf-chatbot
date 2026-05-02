@@ -1,13 +1,17 @@
 import { NextRequest, NextResponse } from 'next/server'
 import Anthropic from '@anthropic-ai/sdk'
-import { ChatRequest, ChatResponse } from '@/types'
+import { ChatRequest, ChatResponse, Language } from '@/types'
 import { detectEmergency } from '@/lib/emergency-detector'
 import { retrieveContext } from '@/lib/retrieval'
 import { buildSystemPrompt } from '@/lib/prompt-builder'
 import { validateResponse } from '@/lib/response-validator'
+import { isLanguage, DEFAULT_LANGUAGE } from '@/lib/i18n'
 
-const EMERGENCY_GUIDANCE_TEXT =
-  'Please contact the clinic immediately or seek emergency care. Do not wait — your health and safety come first. Call the clinic directly or go to your nearest emergency department.'
+const EMERGENCY_GUIDANCE: Record<Language, string> = {
+  en: 'Please contact the clinic immediately or seek emergency care. Do not wait — your health and safety come first. Call the clinic directly or go to your nearest emergency department.',
+  hi: 'कृपया तुरंत क्लिनिक से संपर्क करें या आपातकालीन देखभाल लें। प्रतीक्षा न करें — आपकी सेहत और सुरक्षा सबसे पहले है। क्लिनिक को सीधे कॉल करें या निकटतम आपातकालीन विभाग जाएँ।',
+  kn: 'ದಯವಿಟ್ಟು ಕ್ಲಿನಿಕ್ ಅನ್ನು ತಕ್ಷಣ ಸಂಪರ್ಕಿಸಿ ಅಥವಾ ತುರ್ತು ಆರೈಕೆ ಪಡೆಯಿರಿ. ಕಾಯಬೇಡಿ — ನಿಮ್ಮ ಆರೋಗ್ಯ ಮತ್ತು ಸುರಕ್ಷತೆ ಮೊದಲು. ಕ್ಲಿನಿಕ್‌ಗೆ ನೇರವಾಗಿ ಕರೆ ಮಾಡಿ ಅಥವಾ ಹತ್ತಿರದ ತುರ್ತು ವಿಭಾಗಕ್ಕೆ ಹೋಗಿ.',
+}
 
 export async function POST(request: NextRequest): Promise<NextResponse<ChatResponse | { error: string }>> {
   let body: ChatRequest
@@ -19,6 +23,7 @@ export async function POST(request: NextRequest): Promise<NextResponse<ChatRespo
   }
 
   const { userMessage, messages } = body
+  const language: Language = isLanguage(body.language) ? body.language : DEFAULT_LANGUAGE
 
   // Validate userMessage
   if (!userMessage || typeof userMessage !== 'string' || userMessage.trim().length === 0) {
@@ -48,7 +53,7 @@ export async function POST(request: NextRequest): Promise<NextResponse<ChatRespo
     return NextResponse.json({
       response: '',
       isEmergency: true,
-      emergencyMessage: EMERGENCY_GUIDANCE_TEXT,
+      emergencyMessage: EMERGENCY_GUIDANCE[language],
     })
   }
 
@@ -56,7 +61,7 @@ export async function POST(request: NextRequest): Promise<NextResponse<ChatRespo
   const chunks = retrieveContext(userMessage)
 
   // Step 3: Build system prompt
-  const systemPrompt = buildSystemPrompt(chunks)
+  const systemPrompt = buildSystemPrompt(chunks, language)
 
   // Step 4: Call Claude API
   try {

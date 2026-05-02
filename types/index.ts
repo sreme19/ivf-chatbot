@@ -1,3 +1,6 @@
+// Language types
+export type Language = 'en' | 'hi' | 'kn'
+
 // Message types
 export interface Message {
   id: string
@@ -16,6 +19,7 @@ export interface ConversationMessage {
 export interface ChatRequest {
   messages: ConversationMessage[]
   userMessage: string
+  language?: Language
 }
 
 export interface ChatResponse {
@@ -75,6 +79,7 @@ export interface ClinicCTABarProps {
 export interface EmergencyBannerProps {
   clinicPhone: string
   clinicWhatsApp: string
+  language?: Language
 }
 
 export interface MessageBubbleProps {
@@ -86,4 +91,5 @@ export interface ChatInputProps {
   onSubmit: (message: string) => void
   isLoading: boolean
   disabled: boolean
+  language: Language
 }

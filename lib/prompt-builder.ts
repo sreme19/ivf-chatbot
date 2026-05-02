@@ -1,4 +1,5 @@
-import { FAQChunk } from '@/types'
+import { FAQChunk, Language } from '@/types'
+import { LANGUAGE_NAME } from '@/lib/i18n'
 
 export const SYSTEM_PROMPT_BASE = `You are a compassionate IVF education assistant for Dr. Mekhala's fertility clinic.
 
@@ -29,7 +30,21 @@ RESPONSE STRUCTURE:
 3. State any relevant limitations
 4. Encourage clinic contact for personalized advice`
 
-export function buildSystemPrompt(chunks: FAQChunk[]): string {
+function buildLanguageDirective(language: Language): string {
+  const name = LANGUAGE_NAME[language]
+  if (language === 'en') {
+    return `\n\nLANGUAGE: Respond in ${name}.`
+  }
+  return (
+    `\n\nLANGUAGE: Respond entirely in ${name} using its native script. ` +
+    `Common medical terms (e.g. IVF, AMH, hCG, embryo, ultrasound) may stay in English. ` +
+    `Keep the warm, calm, reassuring tone in ${name}.`
+  )
+}
+
+export function buildSystemPrompt(chunks: FAQChunk[], language: Language = 'en'): string {
+  const languageDirective = buildLanguageDirective(language)
+
   if (chunks.length > 0) {
     let contextSection = '\n\nRELEVANT KNOWLEDGE BASE CONTEXT:\n'
     for (const chunk of chunks) {
@@ -37,12 +52,12 @@ export function buildSystemPrompt(chunks: FAQChunk[]): string {
       contextSection += `Topic: ${chunk.topic}\n`
       contextSection += `${chunk.content}\n`
     }
-    return SYSTEM_PROMPT_BASE + contextSection
+    return SYSTEM_PROMPT_BASE + contextSection + languageDirective
   } else {
     const fallbackNote =
       '\n\nNo specific knowledge base content matched this query. ' +
       'Respond cautiously with general IVF education only, ' +
       'and recommend the user contact the clinic for specifics.'
-    return SYSTEM_PROMPT_BASE + fallbackNote
+    return SYSTEM_PROMPT_BASE + fallbackNote + languageDirective
   }
 }
