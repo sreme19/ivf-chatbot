@@ -8,6 +8,7 @@ import {
   startRecognition,
   VoiceRecognitionHandle,
 } from '@/lib/voice'
+import { emitEvent } from '@/lib/analytics'
 
 const MAX_CHARS = 1000
 const WARN_CHARS = 500
@@ -25,7 +26,6 @@ export default function ChatInput({ onSubmit, isLoading, disabled, language }: C
     setVoiceSupported(isSpeechRecognitionSupported())
   }, [])
 
-  // Stop any in-flight recognition if the language changes
   useEffect(() => {
     return () => {
       recognitionRef.current?.stop()
@@ -33,7 +33,6 @@ export default function ChatInput({ onSubmit, isLoading, disabled, language }: C
     }
   }, [language])
 
-  // Auto-resize textarea
   useEffect(() => {
     const textarea = textareaRef.current
     if (!textarea) return
@@ -64,8 +63,10 @@ export default function ChatInput({ onSubmit, isLoading, disabled, language }: C
   }
 
   const startListening = () => {
-    if (!voiceSupported || isListening) return
+    if (!voiceSupported || isListening || disabled || isLoading) return
     setVoiceError(null)
+    emitEvent('voice_input_started', { language })
+
     const handle = startRecognition({
       language,
       onPartial: (text) => {
@@ -73,6 +74,7 @@ export default function ChatInput({ onSubmit, isLoading, disabled, language }: C
       },
       onFinal: (text) => {
         setValue(text)
+        emitEvent('voice_input_completed', { language })
       },
       onError: (err) => {
         if (err === 'not-allowed' || err === 'service-not-allowed') {
@@ -86,6 +88,7 @@ export default function ChatInput({ onSubmit, isLoading, disabled, language }: C
         setIsListening(false)
       },
     })
+
     if (handle) {
       recognitionRef.current = handle
       setIsListening(true)
@@ -112,6 +115,7 @@ export default function ChatInput({ onSubmit, isLoading, disabled, language }: C
       <div className="flex items-end gap-2">
         {voiceSupported && (
           <button
+            type="button"
             onClick={isListening ? stopListening : startListening}
             disabled={disabled || isLoading}
             className={`shrink-0 w-11 h-11 rounded-xl flex items-center justify-center transition-colors duration-150 min-h-[44px] min-w-[44px] ${
@@ -147,6 +151,7 @@ export default function ChatInput({ onSubmit, isLoading, disabled, language }: C
           aria-multiline="true"
         />
         <button
+          type="button"
           onClick={handleSubmit}
           disabled={disabled || isLoading || !value.trim() || isOverLimit}
           className="shrink-0 w-11 h-11 bg-teal-600 hover:bg-teal-700 active:bg-teal-800 disabled:bg-slate-200 disabled:cursor-not-allowed text-white rounded-xl flex items-center justify-center transition-colors duration-150 min-h-[44px] min-w-[44px]"

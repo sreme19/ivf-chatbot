@@ -74,6 +74,25 @@ flowchart TD
 | `NEXT_PUBLIC_CLINIC_PHONE` | Clinic phone number for `tel:` links |
 | `NEXT_PUBLIC_CLINIC_WHATSAPP` | WhatsApp number for `wa.me/` links (digits only) |
 | `NEXT_PUBLIC_BOOKING_URL` | URL for the booking page |
+| `NEXT_PUBLIC_CLINIC_LOCATION_URL` | Google Maps or clinic location URL |
+| `NEXT_PUBLIC_INSTAGRAM_URL` | Dr. Mekhala / clinic Instagram URL |
+| `POSTHOG_API_KEY` | Optional PostHog project API key for analytics events |
+| `POSTHOG_HOST` | Optional PostHog host, defaults to `https://app.posthog.com/capture/` |
+| `MIXPANEL_TOKEN` | Optional Mixpanel project token for analytics events |
+| `GA4_MEASUREMENT_ID` | Optional GA4 Measurement Protocol ID |
+| `GA4_API_SECRET` | Optional GA4 Measurement Protocol API secret |
+
+## Implemented Feature Tickets
+
+- Suggested starter and follow-up question chips to reduce blank-slate UX
+- Hindi / Kannada / English language selection with preferred-language prompt routing
+- Browser voice input where Web Speech API is available
+- Session continuity in `sessionStorage` for current browser session
+- Lead capture callback form with server-side validation
+- Thumbs up/down feedback events for assistant responses
+- Clinic location and Instagram CTAs alongside call, WhatsApp, and booking
+- Per-IP `/api/chat` rate limiting to reduce abuse and API cost spikes
+- Optional PostHog, Mixpanel, or GA4 analytics dispatch via env vars
 
 ## Deployment (Vercel)
 

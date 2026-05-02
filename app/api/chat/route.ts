@@ -13,8 +13,25 @@ const EMERGENCY_GUIDANCE: Record<Language, string> = {
   kn: 'ದಯವಿಟ್ಟು ಕ್ಲಿನಿಕ್ ಅನ್ನು ತಕ್ಷಣ ಸಂಪರ್ಕಿಸಿ ಅಥವಾ ತುರ್ತು ಆರೈಕೆ ಪಡೆಯಿರಿ. ಕಾಯಬೇಡಿ — ನಿಮ್ಮ ಆರೋಗ್ಯ ಮತ್ತು ಸುರಕ್ಷತೆ ಮೊದಲು. ಕ್ಲಿನಿಕ್‌ಗೆ ನೇರವಾಗಿ ಕರೆ ಮಾಡಿ ಅಥವಾ ಹತ್ತಿರದ ತುರ್ತು ವಿಭಾಗಕ್ಕೆ ಹೋಗಿ.',
 }
 
+const RATE_LIMIT_WINDOW_MS = 60_000
+const RATE_LIMIT_MAX_REQUESTS = 12
+const rateLimitBuckets = new Map<string, { count: number; resetAt: number }>()
+
 export async function POST(request: NextRequest): Promise<NextResponse<ChatResponse | { error: string }>> {
   let body: ChatRequest
+
+  const rateLimitResult = checkRateLimit(request)
+  if (!rateLimitResult.allowed) {
+    return NextResponse.json(
+      { error: 'Too many messages in a short time. Please wait a moment before trying again.' },
+      {
+        status: 429,
+        headers: {
+          'Retry-After': String(Math.ceil(rateLimitResult.retryAfterMs / 1000)),
+        },
+      }
+    )
+  }
 
   try {
     body = await request.json()
@@ -117,6 +134,25 @@ export async function POST(request: NextRequest): Promise<NextResponse<ChatRespo
       { status: 503 }
     )
   }
+}
+
+function checkRateLimit(request: NextRequest): { allowed: true } | { allowed: false; retryAfterMs: number } {
+  const forwardedFor = request.headers.get('x-forwarded-for')?.split(',')[0]?.trim()
+  const ip = forwardedFor || request.headers.get('x-real-ip') || 'local'
+  const now = Date.now()
+  const bucket = rateLimitBuckets.get(ip)
+
+  if (!bucket || bucket.resetAt <= now) {
+    rateLimitBuckets.set(ip, { count: 1, resetAt: now + RATE_LIMIT_WINDOW_MS })
+    return { allowed: true }
+  }
+
+  if (bucket.count >= RATE_LIMIT_MAX_REQUESTS) {
+    return { allowed: false, retryAfterMs: bucket.resetAt - now }
+  }
+
+  bucket.count += 1
+  return { allowed: true }
 }
 
 async function emitAnalytics(event: string): Promise<void> {

@@ -40,6 +40,8 @@ export default function Home() {
       clinicPhone={process.env.NEXT_PUBLIC_CLINIC_PHONE || ''}
       clinicWhatsApp={process.env.NEXT_PUBLIC_CLINIC_WHATSAPP || ''}
       bookingUrl={process.env.NEXT_PUBLIC_BOOKING_URL || '#'}
+      clinicLocationUrl={process.env.NEXT_PUBLIC_CLINIC_LOCATION_URL || 'https://www.google.com/maps/search/?api=1&query=Indira+IVF+Rajajinagar'}
+      instagramUrl={process.env.NEXT_PUBLIC_INSTAGRAM_URL || 'https://www.instagram.com/kicks_and_cries'}
     />
   )
 }

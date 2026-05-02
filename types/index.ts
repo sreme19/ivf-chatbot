@@ -8,6 +8,7 @@ export interface Message {
   content: string
   timestamp: Date
   isEmergency?: boolean
+  feedback?: 'helpful' | 'not_helpful'
 }
 
 export interface ConversationMessage {
@@ -46,6 +47,14 @@ export type AnalyticsEventName =
   | 'call_clicked'
   | 'whatsapp_clicked'
   | 'booking_clicked'
+  | 'location_clicked'
+  | 'instagram_clicked'
+  | 'feedback_submitted'
+  | 'suggestion_clicked'
+  | 'language_selected'
+  | 'voice_input_started'
+  | 'voice_input_completed'
+  | 'lead_submitted'
 
 export interface AnalyticsEvent {
   event: AnalyticsEventName
@@ -65,15 +74,21 @@ export interface ChatInterfaceProps {
   clinicPhone: string
   clinicWhatsApp: string
   bookingUrl: string
+  clinicLocationUrl: string
+  instagramUrl: string
 }
 
 export interface ClinicCTABarProps {
   clinicPhone: string
   clinicWhatsApp: string
   bookingUrl: string
+  clinicLocationUrl: string
+  instagramUrl: string
   onCallClick: () => void
   onWhatsAppClick: () => void
   onBookingClick: () => void
+  onLocationClick: () => void
+  onInstagramClick: () => void
 }
 
 export interface EmergencyBannerProps {
