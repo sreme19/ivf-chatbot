@@ -83,7 +83,7 @@ export async function POST(request: NextRequest): Promise<NextResponse<ChatRespo
   // Step 4: Call Claude API
   try {
     const apiKey = process.env.ANTHROPIC_API_KEY
-    const model = process.env.CLAUDE_MODEL || 'claude-3-5-sonnet-20241022'
+    const model = process.env.CLAUDE_MODEL || 'claude-haiku-4-5-20251001'
 
     if (!apiKey) {
       console.error('[api/chat] ANTHROPIC_API_KEY is not set')
