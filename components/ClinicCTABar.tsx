@@ -19,7 +19,7 @@ export default function ClinicCTABar({
       <a
         href={`tel:${clinicPhone}`}
         onClick={onCallClick}
-        className="flex items-center gap-1.5 bg-teal-600 hover:bg-teal-700 active:bg-teal-800 text-white text-sm font-medium px-4 py-3 rounded-xl transition-colors duration-150 min-h-[44px] min-w-[44px]"
+        className="flex items-center gap-1.5 bg-brand-600 hover:bg-brand-700 active:bg-brand-800 text-white text-sm font-medium px-4 py-3 rounded-xl transition-colors duration-150 min-h-[44px] min-w-[44px]"
         aria-label={`Call clinic at ${clinicPhone}`}
       >
         <svg className="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">

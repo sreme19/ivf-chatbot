@@ -146,7 +146,7 @@ export default function ChatInput({ onSubmit, isLoading, disabled, language }: C
           placeholder={t.placeholder}
           rows={1}
           maxLength={MAX_CHARS + 1}
-          className="flex-1 resize-none bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-base text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent disabled:opacity-50 disabled:cursor-not-allowed leading-6 min-h-[44px]"
+          className="flex-1 resize-none bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-base text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent disabled:opacity-50 disabled:cursor-not-allowed leading-6 min-h-[44px]"
           aria-label={t.placeholder}
           aria-multiline="true"
         />
@@ -154,7 +154,7 @@ export default function ChatInput({ onSubmit, isLoading, disabled, language }: C
           type="button"
           onClick={handleSubmit}
           disabled={disabled || isLoading || !value.trim() || isOverLimit}
-          className="shrink-0 w-11 h-11 bg-teal-600 hover:bg-teal-700 active:bg-teal-800 disabled:bg-slate-200 disabled:cursor-not-allowed text-white rounded-xl flex items-center justify-center transition-colors duration-150 min-h-[44px] min-w-[44px]"
+          className="shrink-0 w-11 h-11 bg-brand-600 hover:bg-brand-700 active:bg-brand-800 disabled:bg-slate-200 disabled:cursor-not-allowed text-white rounded-xl flex items-center justify-center transition-colors duration-150 min-h-[44px] min-w-[44px]"
           aria-label={t.send}
         >
           {isLoading ? (

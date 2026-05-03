@@ -11,6 +11,18 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        brand: {
+          50:  '#fef3f7',
+          100: '#fce7f0',
+          200: '#f9c8db',
+          300: '#f49cbe',
+          400: '#eb6397',
+          500: '#d4426a',
+          600: '#b61e42',
+          700: '#9a1937',
+          800: '#7d142c',
+          900: '#5e0f21',
+        },
       },
       animation: {
         'fade-in': 'fadeIn 0.2s ease-out forwards',

@@ -244,16 +244,19 @@ export default function ChatInterface({
   )
 
   return (
-    <div className="flex flex-col h-screen bg-slate-50">
-      <header className="bg-white border-b border-slate-100 px-4 py-3 flex items-center gap-2 shrink-0">
-        <div className="w-9 h-9 bg-teal-50 rounded-full flex items-center justify-center shrink-0">
-          <svg className="w-5 h-5 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-          </svg>
+    <div className="flex flex-col h-screen bg-brand-50">
+      <header className="bg-white border-b border-slate-100 px-4 py-2.5 flex items-center gap-2.5 shrink-0">
+        <div className="relative shrink-0">
+          <img
+            src="/dr-mekhala.webp"
+            alt="Dr. Mekhala Iyengar"
+            className="w-10 h-10 rounded-full object-cover object-top border border-brand-100"
+          />
+          <span className="absolute bottom-0 right-0 w-3 h-3 bg-green-400 rounded-full border-2 border-white" aria-hidden="true" />
         </div>
         <div className="flex-1 min-w-0">
-          <h1 className="text-base font-semibold text-slate-800 leading-tight">IVF Assistant</h1>
-          <p className="text-xs text-slate-500 truncate">Dr. Mekhala&apos;s Fertility Clinic</p>
+          <h1 className="text-sm font-bold text-slate-800 leading-tight">Dr. Mekhala Iyengar</h1>
+          <p className="text-xs text-brand-600 font-medium truncate">Gynaecologist & IVF Specialist · Indira IVF</p>
         </div>
 
         <div className="flex items-center gap-1.5 shrink-0">
@@ -261,7 +264,7 @@ export default function ChatInterface({
           <a
             href={`tel:${clinicPhone}`}
             onClick={() => emitEvent('call_clicked')}
-            className="w-9 h-9 rounded-lg bg-teal-50 text-teal-700 hover:bg-teal-100 flex items-center justify-center transition-colors"
+            className="w-9 h-9 rounded-lg bg-brand-50 text-brand-700 hover:bg-brand-100 flex items-center justify-center transition-colors"
             aria-label={`Call clinic at ${clinicPhone}`}
             title="Call Clinic"
           >
@@ -304,7 +307,7 @@ export default function ChatInterface({
               onClick={toggleVoiceOut}
               className={`w-9 h-9 rounded-lg flex items-center justify-center transition-colors ${
                 voiceOutEnabled
-                  ? 'bg-teal-50 text-teal-600'
+                  ? 'bg-brand-50 text-brand-600'
                   : 'bg-slate-50 text-slate-400 hover:text-slate-600'
               }`}
               aria-label={voiceOutEnabled ? t.speakToggleOn : t.speakToggleOff}
@@ -329,7 +332,7 @@ export default function ChatInterface({
             id="language-select"
             value={language}
             onChange={(e) => handleLanguageChange(e.target.value as Language)}
-            className="bg-slate-50 border border-slate-200 rounded-lg text-sm text-slate-700 px-2 py-1.5 focus:outline-none focus:ring-2 focus:ring-teal-500"
+            className="bg-slate-50 border border-slate-200 rounded-lg text-sm text-slate-700 px-2 py-1.5 focus:outline-none focus:ring-2 focus:ring-brand-500"
             aria-label={t.languageLabel}
           >
             {SUPPORTED_LANGUAGES.map((lang) => (
@@ -356,8 +359,8 @@ export default function ChatInterface({
                   onClick={() => handleFeedback(message.id, 'helpful')}
                   className={`p-1.5 rounded transition-colors ${
                     message.feedback === 'helpful'
-                      ? 'text-teal-600'
-                      : 'text-slate-300 hover:text-teal-500'
+                      ? 'text-brand-600'
+                      : 'text-slate-300 hover:text-brand-500'
                   }`}
                   aria-label="Mark response helpful"
                 >
@@ -416,7 +419,7 @@ export default function ChatInterface({
         )}
         <div className="flex items-center justify-end pb-1">
           {leadStatus === 'saved' ? (
-            <span className="text-xs text-teal-700 flex items-center gap-1">
+            <span className="text-xs text-brand-700 flex items-center gap-1">
               <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
               </svg>
@@ -426,7 +429,7 @@ export default function ChatInterface({
             <button
               type="button"
               onClick={() => setShowCallbackDrawer(true)}
-              className="text-xs text-slate-400 hover:text-teal-600 flex items-center gap-1 transition-colors py-1"
+              className="text-xs text-slate-400 hover:text-brand-600 flex items-center gap-1 transition-colors py-1"
             >
               <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
@@ -468,7 +471,7 @@ export default function ChatInterface({
             </div>
 
             {leadStatus === 'saved' ? (
-              <div className="rounded-xl border border-teal-100 bg-teal-50 px-4 py-3 text-sm text-teal-800">
+              <div className="rounded-xl border border-brand-100 bg-brand-50 px-4 py-3 text-sm text-brand-800">
                 Thank you. The clinic team has your callback request.
               </div>
             ) : (
@@ -478,7 +481,7 @@ export default function ChatInterface({
                     value={leadName}
                     onChange={(event) => setLeadName(event.target.value)}
                     placeholder="Name"
-                    className="min-h-[44px] rounded-lg border border-slate-200 bg-slate-50 px-3 text-base text-slate-800 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:bg-white"
+                    className="min-h-[44px] rounded-lg border border-slate-200 bg-slate-50 px-3 text-base text-slate-800 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:bg-white"
                     aria-label="Name"
                     maxLength={80}
                   />
@@ -487,7 +490,7 @@ export default function ChatInterface({
                     onChange={(event) => setLeadPhone(event.target.value)}
                     placeholder="Phone number"
                     inputMode="tel"
-                    className="min-h-[44px] rounded-lg border border-slate-200 bg-slate-50 px-3 text-base text-slate-800 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:bg-white"
+                    className="min-h-[44px] rounded-lg border border-slate-200 bg-slate-50 px-3 text-base text-slate-800 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:bg-white"
                     aria-label="Phone number"
                     maxLength={20}
                   />
@@ -495,7 +498,7 @@ export default function ChatInterface({
                 <button
                   type="submit"
                   disabled={leadStatus === 'saving' || !leadName.trim() || !leadPhone.trim()}
-                  className="w-full min-h-[44px] rounded-lg bg-teal-600 px-4 text-sm font-medium text-white hover:bg-teal-700 disabled:bg-slate-200 disabled:text-slate-500 transition-colors"
+                  className="w-full min-h-[44px] rounded-lg bg-brand-600 px-4 text-sm font-medium text-white hover:bg-brand-700 disabled:bg-slate-200 disabled:text-slate-500 transition-colors"
                 >
                   {leadStatus === 'saving' ? 'Sending…' : 'Send callback request'}
                 </button>

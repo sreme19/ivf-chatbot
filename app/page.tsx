@@ -25,8 +25,8 @@ export default function Home() {
   // Avoid flash of wrong screen during hydration
   if (consentAccepted === null) {
     return (
-      <div className="min-h-screen bg-slate-50 flex items-center justify-center">
-        <div className="w-8 h-8 border-2 border-teal-600 border-t-transparent rounded-full animate-spin" aria-label="Loading" />
+      <div className="min-h-screen bg-brand-50 flex items-center justify-center">
+        <div className="w-8 h-8 border-2 border-brand-600 border-t-transparent rounded-full animate-spin" aria-label="Loading" />
       </div>
     )
   }

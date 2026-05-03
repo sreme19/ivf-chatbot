@@ -2,8 +2,8 @@ import type { Metadata, Viewport } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: "IVF Assistant — Dr. Mekhala's Clinic",
-  description: 'Get clear, empathetic answers to your IVF questions. Powered by Dr. Mekhala\'s fertility clinic.',
+  title: 'IVF Assistant — Dr. Mekhala Iyengar | Indira IVF Rajajinagar',
+  description: 'Get clear, empathetic answers to your IVF questions from Dr. Mekhala Iyengar, Gynaecologist & IVF Specialist at Indira IVF Rajajinagar, Bengaluru.',
   robots: 'noindex, nofollow',
 }
 
