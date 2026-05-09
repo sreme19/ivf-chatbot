@@ -3,7 +3,6 @@ import Anthropic from '@anthropic-ai/sdk'
 import { ChatRequest, ChatResponse, Language } from '@/types'
 import { detectEmergency } from '@/lib/emergency-detector'
 import { retrieveContext } from '@/lib/retrieval'
-import { retrieveVideos } from '@/lib/video-retrieval'
 import { buildSystemPrompt } from '@/lib/prompt-builder'
 import { validateResponse } from '@/lib/response-validator'
 import { isLanguage, DEFAULT_LANGUAGE } from '@/lib/i18n'
@@ -120,23 +119,18 @@ export async function POST(request: NextRequest): Promise<NextResponse<ChatRespo
     // Step 5: Validate response
     const validatedResponse = validateResponse(rawResponse)
 
-    // Step 6: Retrieve related videos (prioritize user's language)
-    const relatedVideos = retrieveVideos(userMessage, language)
+    // Step 6: Retrieve related videos (disabled for now - waiting for curated list)
+    // TODO: Re-enable video retrieval once curated YouTube video list is provided
+    // const relatedVideos = retrieveVideos(userMessage, language)
 
     // Emit analytics (fire and forget)
     emitAnalytics('question_asked').catch(() => {})
 
-    const responseData: ChatResponse = {
+    return NextResponse.json({
       response: validatedResponse,
       isEmergency: false,
       retrievedChunks: chunks.length,
-    }
-
-    if (relatedVideos.length > 0) {
-      responseData.relatedVideos = relatedVideos
-    }
-
-    return NextResponse.json(responseData)
+    })
   } catch (error) {
     console.error('[api/chat] Claude API error:', error)
     return NextResponse.json(
