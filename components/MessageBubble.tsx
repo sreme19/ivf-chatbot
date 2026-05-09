@@ -61,8 +61,8 @@ export default function MessageBubble({ message, onSpeak }: MessageBubbleProps) 
       {/* Related videos */}
       {!isUser && message.videos && message.videos.length > 0 && (
         <div className="mt-3 w-full">
-          <p className="text-xs font-medium text-slate-600 mb-2">📺 Related Videos:</p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+          <p className="text-xs font-medium text-slate-600 mb-1.5">📺 Related Videos:</p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-1.5">
             {message.videos.map(video => (
               <VideoCard key={video.id} video={video} />
             ))}

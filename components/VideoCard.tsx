@@ -22,27 +22,26 @@ export default function VideoCard({ video }: VideoCardProps) {
       rel="noopener noreferrer"
       className="group block bg-white border border-slate-200 rounded-lg overflow-hidden hover:shadow-md transition-all duration-150 hover:border-brand-300"
     >
-      <div className="relative bg-slate-100 aspect-video overflow-hidden">
+      <div className="relative bg-slate-100 aspect-video overflow-hidden h-20">
         <img
           src={thumbnailUrl}
           alt={video.title}
           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-150"
         />
         <div className="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/30 transition-colors">
-          <svg className="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
             <path d="M8 5v14l11-7z" />
           </svg>
         </div>
-        <span className="absolute bottom-2 right-2 bg-black/70 text-white text-xs px-2 py-1 rounded">
+        <span className="absolute bottom-1 right-1 bg-black/70 text-white text-xs px-1.5 py-0.5 rounded text-[10px]">
           {video.duration}
         </span>
       </div>
-      <div className="p-3">
-        <h3 className="font-semibold text-sm text-slate-800 line-clamp-2 group-hover:text-brand-600 transition-colors">
+      <div className="p-2">
+        <h3 className="font-semibold text-xs text-slate-800 line-clamp-2 group-hover:text-brand-600 transition-colors">
           {video.title}
         </h3>
-        <p className="text-xs text-slate-500 mt-1">{video.channel}</p>
-        <p className="text-xs text-slate-600 mt-2 line-clamp-2">{video.description}</p>
+        <p className="text-xs text-slate-500 mt-0.5">{video.channel}</p>
       </div>
     </a>
   )
