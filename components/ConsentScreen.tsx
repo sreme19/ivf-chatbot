@@ -1,10 +1,15 @@
 'use client'
 
+import { Language } from '@/types'
+import { SUPPORTED_LANGUAGES } from '@/lib/i18n'
+
 interface ConsentScreenProps {
   onAccept: () => void
+  language: Language
+  onLanguageChange: (language: Language) => void
 }
 
-export default function ConsentScreen({ onAccept }: ConsentScreenProps) {
+export default function ConsentScreen({ onAccept, language, onLanguageChange }: ConsentScreenProps) {
   return (
     <div className="min-h-screen bg-brand-50 flex items-center justify-center px-4 py-8">
       <div className="max-w-md w-full bg-white rounded-2xl shadow-sm border border-brand-100 overflow-hidden">
@@ -21,6 +26,30 @@ export default function ConsentScreen({ onAccept }: ConsentScreenProps) {
         </div>
 
         <div className="p-6">
+          {/* Language Selector - Prominent at top */}
+          <div className="mb-6 pb-6 border-b border-slate-200">
+            <label className="block text-sm font-semibold text-slate-800 mb-3">
+              Select Language / ভাষা নির্বাচন করুন / ಭಾಷೆ ಆಯ್ಕೆಮಾಡಿ
+            </label>
+            <div className="grid grid-cols-3 gap-2">
+              {SUPPORTED_LANGUAGES.map((lang) => (
+                <button
+                  key={lang.code}
+                  onClick={() => onLanguageChange(lang.code as Language)}
+                  className={`py-3 px-2 rounded-lg font-medium text-sm transition-all duration-150 border-2 ${
+                    language === lang.code
+                      ? 'bg-brand-600 text-white border-brand-600 shadow-md'
+                      : 'bg-white text-slate-700 border-slate-200 hover:border-brand-300'
+                  }`}
+                  aria-label={`Select ${lang.nativeLabel}`}
+                  aria-pressed={language === lang.code}
+                >
+                  {lang.nativeLabel}
+                </button>
+              ))}
+            </div>
+          </div>
+
           {/* Doctor card */}
           <div className="flex items-center gap-4 mb-6">
             <div className="relative shrink-0">

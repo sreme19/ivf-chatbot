@@ -4,22 +4,41 @@ import { useState, useEffect } from 'react'
 import ConsentScreen from '@/components/ConsentScreen'
 import ChatInterface from '@/components/ChatInterface'
 import { emitEvent } from '@/lib/analytics'
+import { Language } from '@/types'
+import { DEFAULT_LANGUAGE } from '@/lib/i18n'
 
 const CONSENT_KEY = 'ivf_consent_accepted'
+const LANGUAGE_STORAGE_KEY = 'ivf_language'
+
+function isStoredLanguage(value: string | null): value is Language {
+  return value === 'en' || value === 'hi' || value === 'kn'
+}
 
 export default function Home() {
   const [consentAccepted, setConsentAccepted] = useState<boolean | null>(null)
+  const [language, setLanguage] = useState<Language>(DEFAULT_LANGUAGE)
 
   // Check sessionStorage on mount
   useEffect(() => {
     const stored = sessionStorage.getItem(CONSENT_KEY)
     setConsentAccepted(stored === 'true')
+
+    const savedLanguage = sessionStorage.getItem(LANGUAGE_STORAGE_KEY)
+    if (isStoredLanguage(savedLanguage)) {
+      setLanguage(savedLanguage)
+    }
   }, [])
 
   const handleAccept = () => {
     sessionStorage.setItem(CONSENT_KEY, 'true')
     setConsentAccepted(true)
     emitEvent('chat_started')
+  }
+
+  const handleLanguageChange = (newLanguage: Language) => {
+    setLanguage(newLanguage)
+    sessionStorage.setItem(LANGUAGE_STORAGE_KEY, newLanguage)
+    emitEvent('language_selected')
   }
 
   // Avoid flash of wrong screen during hydration
@@ -32,7 +51,7 @@ export default function Home() {
   }
 
   if (!consentAccepted) {
-    return <ConsentScreen onAccept={handleAccept} />
+    return <ConsentScreen onAccept={handleAccept} language={language} onLanguageChange={handleLanguageChange} />
   }
 
   return (
