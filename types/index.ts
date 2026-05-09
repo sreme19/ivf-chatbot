@@ -72,7 +72,6 @@ export interface EmergencyResult {
 // Component prop types
 export interface ChatInterfaceProps {
   clinicPhone: string
-  clinicWhatsApp: string
   bookingUrl: string
   clinicLocationUrl: string
   instagramUrl: string
@@ -80,12 +79,10 @@ export interface ChatInterfaceProps {
 
 export interface ClinicCTABarProps {
   clinicPhone: string
-  clinicWhatsApp: string
   bookingUrl: string
   clinicLocationUrl: string
   instagramUrl: string
   onCallClick: () => void
-  onWhatsAppClick: () => void
   onBookingClick: () => void
   onLocationClick: () => void
   onInstagramClick: () => void
@@ -93,7 +90,6 @@ export interface ClinicCTABarProps {
 
 export interface EmergencyBannerProps {
   clinicPhone: string
-  clinicWhatsApp: string
   language?: Language
 }
 
