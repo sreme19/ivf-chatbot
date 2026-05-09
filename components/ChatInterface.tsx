@@ -311,22 +311,26 @@ export default function ChatInterface({
               )}
             </button>
           )}
-          <label className="sr-only" htmlFor="language-select">
-            {t.languageLabel}
-          </label>
-          <select
-            id="language-select"
-            value={language}
-            onChange={(e) => handleLanguageChange(e.target.value as Language)}
-            className="bg-slate-50 border border-slate-200 rounded-lg text-sm text-slate-700 px-2 py-1.5 focus:outline-none focus:ring-2 focus:ring-brand-500"
-            aria-label={t.languageLabel}
-          >
-            {SUPPORTED_LANGUAGES.map((lang) => (
-              <option key={lang.code} value={lang.code}>
-                {lang.nativeLabel}
-              </option>
-            ))}
-          </select>
+          {!hasUserAskedQuestion && (
+            <>
+              <label className="sr-only" htmlFor="language-select">
+                {t.languageLabel}
+              </label>
+              <select
+                id="language-select"
+                value={language}
+                onChange={(e) => handleLanguageChange(e.target.value as Language)}
+                className="bg-slate-50 border border-slate-200 rounded-lg text-sm text-slate-700 px-2 py-1.5 focus:outline-none focus:ring-2 focus:ring-brand-500"
+                aria-label={t.languageLabel}
+              >
+                {SUPPORTED_LANGUAGES.map((lang) => (
+                  <option key={lang.code} value={lang.code}>
+                    {lang.nativeLabel}
+                  </option>
+                ))}
+              </select>
+            </>
+          )}
         </div>
       </header>
 
@@ -337,7 +341,11 @@ export default function ChatInterface({
 
         {messages.map((message, index) => (
           <div key={message.id}>
-            <MessageBubble message={message} isLatest={index === messages.length - 1} />
+            <MessageBubble
+              message={message}
+              isLatest={index === messages.length - 1}
+              onSpeak={ttsSupported ? (text) => speak({ text, language }) : undefined}
+            />
             {message.role === 'assistant' && message.id !== 'welcome' && (
               <div className="mt-1 flex items-center gap-0.5 pl-1" aria-label="Rate assistant response">
                 <button
