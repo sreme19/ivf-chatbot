@@ -1,4 +1,5 @@
 import { getVideos, Video } from './video-loader'
+import { Language } from '@/types'
 
 const MAX_VIDEOS = 2
 
@@ -9,14 +10,14 @@ function getTokens(text: string): string[] {
     .filter(token => token.length > 2)
 }
 
-function scoreVideo(userMessage: string, video: Video): number {
+function scoreVideo(userMessage: string, video: Video, userLanguage?: Language): number {
   const messageTokens = getTokens(userMessage)
   const messageSet = new Set(messageTokens)
 
-  // Keyword matches (highest weight)
   let score = 0
-  const videoKeywords = video.keywords.map(k => k.toLowerCase())
 
+  // Keyword matches (highest weight)
+  const videoKeywords = video.keywords.map(k => k.toLowerCase())
   for (const keyword of videoKeywords) {
     const keywordTokens = getTokens(keyword)
     for (const token of keywordTokens) {
@@ -42,10 +43,15 @@ function scoreVideo(userMessage: string, video: Video): number {
     }
   }
 
+  // Language preference boost: prioritize videos in user's language
+  if (userLanguage && video.language === userLanguage) {
+    score += 2
+  }
+
   return score
 }
 
-export function retrieveVideos(userMessage: string): Video[] {
+export function retrieveVideos(userMessage: string, userLanguage?: Language): Video[] {
   if (!userMessage || typeof userMessage !== 'string') {
     return []
   }
@@ -58,7 +64,7 @@ export function retrieveVideos(userMessage: string): Video[] {
   // Score all videos
   const scored = videos.map(video => ({
     video,
-    score: scoreVideo(userMessage, video),
+    score: scoreVideo(userMessage, video, userLanguage),
   }))
 
   // Filter by minimum score threshold

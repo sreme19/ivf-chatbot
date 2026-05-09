@@ -120,18 +120,23 @@ export async function POST(request: NextRequest): Promise<NextResponse<ChatRespo
     // Step 5: Validate response
     const validatedResponse = validateResponse(rawResponse)
 
-    // Step 6: Retrieve related videos (optional enhancement)
-    const relatedVideos = retrieveVideos(userMessage)
+    // Step 6: Retrieve related videos (prioritize user's language)
+    const relatedVideos = retrieveVideos(userMessage, language)
 
     // Emit analytics (fire and forget)
     emitAnalytics('question_asked').catch(() => {})
 
-    return NextResponse.json({
+    const responseData: ChatResponse = {
       response: validatedResponse,
       isEmergency: false,
       retrievedChunks: chunks.length,
-      relatedVideos: relatedVideos.length > 0 ? relatedVideos : undefined,
-    })
+    }
+
+    if (relatedVideos.length > 0) {
+      responseData.relatedVideos = relatedVideos
+    }
+
+    return NextResponse.json(responseData)
   } catch (error) {
     console.error('[api/chat] Claude API error:', error)
     return NextResponse.json(

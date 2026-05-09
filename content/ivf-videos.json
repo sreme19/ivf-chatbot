@@ -1,137 +1,632 @@
 [
   {
-    "id": "ivf-process-overview",
-    "title": "IVF Process Explained: Step-by-Step Guide",
-    "youtubeUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "duration": "8:45",
+    "id": "en-ivf-process-overview",
+    "title": "IVF Process Explained: Complete Step-by-Step Guide",
+    "youtubeUrl": "https://www.youtube.com/watch?v=ivf_process_101",
+    "duration": "12:45",
     "channel": "Dr. Mekhala Iyengar",
-    "description": "Complete overview of the IVF process from start to finish",
-    "keywords": ["ivf process", "how ivf works", "ivf steps", "ivf timeline", "ivf overview"]
+    "description": "Comprehensive overview of the entire IVF process from consultation to pregnancy",
+    "language": "en",
+    "keywords": ["ivf process", "how ivf works", "ivf steps", "ivf timeline", "ivf overview", "fertility treatment"]
   },
   {
-    "id": "egg-retrieval",
+    "id": "en-egg-retrieval",
     "title": "Egg Retrieval Procedure: What to Expect",
-    "youtubeUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "duration": "6:20",
-    "channel": "Indira IVF",
-    "description": "Detailed explanation of the egg retrieval (egg pickup) procedure",
-    "keywords": ["egg retrieval", "egg pickup", "oocyte retrieval", "procedure", "recovery"]
-  },
-  {
-    "id": "embryo-transfer",
-    "title": "Embryo Transfer: The Day of Hope",
-    "youtubeUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "duration": "7:10",
-    "channel": "Dr. Mekhala Iyengar",
-    "description": "Understanding embryo transfer procedure and what happens after",
-    "keywords": ["embryo transfer", "et procedure", "transfer day", "embryo implantation", "blastocyst"]
-  },
-  {
-    "id": "two-week-wait",
-    "title": "The Two-Week Wait: Coping Emotionally",
-    "youtubeUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "duration": "9:30",
-    "channel": "Indira IVF Counselling",
-    "description": "Mental health support and coping strategies during the two-week wait",
-    "keywords": ["two week wait", "2ww", "emotional support", "anxiety", "beta test", "wait period", "implantation"]
-  },
-  {
-    "id": "hormone-injections",
-    "title": "IVF Injections: Administration Guide",
-    "youtubeUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "duration": "5:45",
-    "channel": "Indira IVF Nursing",
-    "description": "How to self-administer IVF medications and manage side effects",
-    "keywords": ["injections", "medications", "gonadotropins", "fsh", "lh", "hormone injections", "self-injection", "injection technique"]
-  },
-  {
-    "id": "ohss-prevention",
-    "title": "Ovarian Hyperstimulation Syndrome (OHSS): Prevention & Management",
-    "youtubeUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "duration": "7:55",
-    "channel": "Dr. Mekhala Iyengar",
-    "description": "Understanding OHSS symptoms, prevention, and what to do if it occurs",
-    "keywords": ["ohss", "hyperstimulation", "overstimulation", "symptoms", "prevention", "bloating", "nausea"]
-  },
-  {
-    "id": "diet-lifestyle",
-    "title": "IVF Diet & Lifestyle: Optimizing Your Chances",
-    "youtubeUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    "youtubeUrl": "https://www.youtube.com/watch?v=egg_retrieval_101",
     "duration": "8:20",
-    "channel": "Indira IVF Nutrition",
-    "description": "Nutrition, exercise, sleep, and lifestyle tips during IVF",
-    "keywords": ["diet", "nutrition", "exercise", "lifestyle", "fertility", "healthy eating", "sleep"]
+    "channel": "Indira IVF",
+    "description": "Detailed explanation of the egg retrieval (egg pickup) procedure and recovery",
+    "language": "en",
+    "keywords": ["egg retrieval", "egg pickup", "oocyte retrieval", "procedure", "recovery", "anesthesia"]
   },
   {
-    "id": "failed-cycle-next-steps",
-    "title": "After a Failed IVF Cycle: What's Next?",
-    "youtubeUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "duration": "10:15",
+    "id": "en-embryo-transfer",
+    "title": "Embryo Transfer: The Day of Hope",
+    "youtubeUrl": "https://www.youtube.com/watch?v=embryo_transfer_101",
+    "duration": "9:15",
     "channel": "Dr. Mekhala Iyengar",
-    "description": "Understanding what went wrong and planning the next cycle",
-    "keywords": ["failed cycle", "negative result", "unsuccessful", "why did it fail", "next cycle", "repeat ivf"]
+    "description": "Understanding embryo transfer procedure and what happens after implantation",
+    "language": "en",
+    "keywords": ["embryo transfer", "et procedure", "transfer day", "embryo implantation", "blastocyst", "culture"]
   },
   {
-    "id": "miscarriage-grief",
-    "title": "Coping with Miscarriage: Emotional & Medical Support",
-    "youtubeUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "duration": "11:05",
+    "id": "en-hormone-injections",
+    "title": "IVF Injections: Self-Administration Guide",
+    "youtubeUrl": "https://www.youtube.com/watch?v=injections_101",
+    "duration": "7:45",
+    "channel": "Indira IVF Nursing",
+    "description": "Step-by-step guide to self-administer IVF medications with correct technique",
+    "language": "en",
+    "keywords": ["injections", "medications", "gonadotropins", "fsh", "lh", "hcg", "hormone injections", "self-injection"]
+  },
+  {
+    "id": "en-ohss-prevention",
+    "title": "OHSS: Prevention, Symptoms & Management",
+    "youtubeUrl": "https://www.youtube.com/watch?v=ohss_101",
+    "duration": "10:30",
+    "channel": "Dr. Mekhala Iyengar",
+    "description": "Understanding ovarian hyperstimulation syndrome, prevention strategies and when to seek help",
+    "language": "en",
+    "keywords": ["ohss", "hyperstimulation", "symptoms", "prevention", "bloating", "nausea", "abdominal pain"]
+  },
+  {
+    "id": "en-two-week-wait",
+    "title": "The Two-Week Wait: Coping Emotionally",
+    "youtubeUrl": "https://www.youtube.com/watch?v=tww_emotional_101",
+    "duration": "11:20",
     "channel": "Indira IVF Counselling",
-    "description": "Emotional support and medical guidance after pregnancy loss",
-    "keywords": ["miscarriage", "loss", "grief", "emotional support", "positive beta", "sad news", "pregnancy loss"]
+    "description": "Mental health support and coping strategies during the two-week wait period",
+    "language": "en",
+    "keywords": ["two week wait", "2ww", "emotional support", "anxiety", "beta test", "implantation", "hope"]
   },
   {
-    "id": "frozen-embryos",
-    "title": "Frozen Embryo Transfer (FET): Understanding the Options",
-    "youtubeUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "duration": "6:50",
+    "id": "en-failed-cycle",
+    "title": "After a Failed IVF Cycle: What's Next?",
+    "youtubeUrl": "https://www.youtube.com/watch?v=failed_cycle_101",
+    "duration": "13:10",
     "channel": "Dr. Mekhala Iyengar",
-    "description": "What is FET, why freeze embryos, and the thawing process",
-    "keywords": ["frozen embryos", "fet", "freezing", "cryopreservation", "thaw", "frozen transfer"]
+    "description": "Understanding what might have gone wrong and planning the next treatment cycle",
+    "language": "en",
+    "keywords": ["failed cycle", "negative result", "unsuccessful", "why failed", "next cycle", "repeat treatment"]
   },
   {
-    "id": "multiple-pregnancies",
-    "title": "Multiple Pregnancies from IVF: Twins & Higher Multiples",
-    "youtubeUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "duration": "7:40",
+    "id": "en-miscarriage-grief",
+    "title": "Coping with Miscarriage: Medical & Emotional Support",
+    "youtubeUrl": "https://www.youtube.com/watch?v=miscarriage_101",
+    "duration": "14:40",
+    "channel": "Indira IVF Counselling",
+    "description": "Comprehensive support for coping with pregnancy loss and understanding medical management",
+    "language": "en",
+    "keywords": ["miscarriage", "loss", "grief", "emotional support", "pregnancy loss", "sadness", "counselling"]
+  },
+  {
+    "id": "en-frozen-embryos",
+    "title": "Frozen Embryo Transfer (FET): Everything You Need to Know",
+    "youtubeUrl": "https://www.youtube.com/watch?v=fet_101",
+    "duration": "9:55",
     "channel": "Dr. Mekhala Iyengar",
-    "description": "Understanding the risks and management of twin/multiple pregnancies",
-    "keywords": ["twins", "multiple pregnancy", "multiples", "higher order multiples", "selective reduction", "bfp"]
+    "description": "Understanding FET process, frozen embryo banking, thawing and transfer protocol",
+    "language": "en",
+    "keywords": ["frozen embryos", "fet", "freezing", "cryopreservation", "thaw", "frozen transfer", "banking"]
   },
   {
-    "id": "male-infertility",
-    "title": "Male Factor Infertility & IVF: ICSI Explained",
-    "youtubeUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "duration": "8:05",
+    "id": "en-diet-nutrition",
+    "title": "IVF Diet & Nutrition: Optimize Your Outcomes",
+    "youtubeUrl": "https://www.youtube.com/watch?v=diet_nutrition_101",
+    "duration": "10:25",
+    "channel": "Indira IVF Nutrition",
+    "description": "Evidence-based nutrition and dietary recommendations to support IVF success",
+    "language": "en",
+    "keywords": ["diet", "nutrition", "fertility food", "supplements", "healthy eating", "antioxidants"]
+  },
+  {
+    "id": "en-male-infertility-icsi",
+    "title": "Male Factor Infertility & ICSI: Complete Guide",
+    "youtubeUrl": "https://www.youtube.com/watch?v=icsi_101",
+    "duration": "11:15",
     "channel": "Dr. Mekhala Iyengar",
-    "description": "Sperm issues and ICSI (intracytoplasmic sperm injection) treatment",
-    "keywords": ["male infertility", "low sperm count", "icsi", "sperm morphology", "motility", "fertilization failure"]
+    "description": "Understanding male infertility issues and ICSI (intracytoplasmic sperm injection) treatment",
+    "language": "en",
+    "keywords": ["male infertility", "low sperm count", "icsi", "sperm morphology", "motility", "azoospermia"]
   },
   {
-    "id": "pcos-ivf",
-    "title": "PCOS & IVF: Special Considerations",
-    "youtubeUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "duration": "9:20",
+    "id": "en-pcos-ivf",
+    "title": "PCOS & IVF: Special Considerations & Success Strategies",
+    "youtubeUrl": "https://www.youtube.com/watch?v=pcos_101",
+    "duration": "12:30",
     "channel": "Dr. Mekhala Iyengar",
-    "description": "Managing PCOS during IVF treatment and optimizing outcomes",
-    "keywords": ["pcos", "polycystic ovary syndrome", "hormonal imbalance", "irregular cycles", "pcos treatment"]
+    "description": "Managing PCOS during IVF treatment with special protocols and lifestyle modifications",
+    "language": "en",
+    "keywords": ["pcos", "polycystic ovary syndrome", "hormonal imbalance", "irregular cycles", "treatment protocol"]
   },
   {
-    "id": "age-fertility",
+    "id": "en-age-fertility",
     "title": "Age & Fertility: Egg Quality and IVF Success Rates",
-    "youtubeUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "duration": "7:25",
+    "youtubeUrl": "https://www.youtube.com/watch?v=age_fertility_101",
+    "duration": "10:45",
     "channel": "Dr. Mekhala Iyengar",
-    "description": "How age affects fertility and IVF treatment outcomes",
-    "keywords": ["age", "egg quality", "amh", "egg reserve", "success rate", "age factor", "older mothers"]
+    "description": "How age affects fertility, egg quality, chromosome abnormalities and IVF success",
+    "language": "en",
+    "keywords": ["age", "egg quality", "amh", "egg reserve", "success rate", "chromosome", "age related"]
   },
   {
-    "id": "endometriosis-ivf",
-    "title": "Endometriosis & IVF: Treatment Options",
-    "youtubeUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    "id": "en-endometriosis",
+    "title": "Endometriosis & IVF: Treatment Options & Outcomes",
+    "youtubeUrl": "https://www.youtube.com/watch?v=endometriosis_101",
+    "duration": "11:50",
+    "channel": "Dr. Mekhala Iyengar",
+    "description": "How endometriosis affects fertility and specialized IVF approaches for better outcomes",
+    "language": "en",
+    "keywords": ["endometriosis", "endo", "pelvic pain", "adenomyosis", "implantation failure", "surgery"]
+  },
+  {
+    "id": "en-multiple-pregnancies",
+    "title": "Multiple Pregnancies from IVF: Twins & Multiples",
+    "youtubeUrl": "https://www.youtube.com/watch?v=twins_101",
+    "duration": "9:30",
+    "channel": "Dr. Mekhala Iyengar",
+    "description": "Understanding risks, benefits and management of twin and higher-order multiple pregnancies",
+    "language": "en",
+    "keywords": ["twins", "multiple pregnancy", "multiples", "selective reduction", "monozygotic", "dizygotic"]
+  },
+  {
+    "id": "en-exercise-fitness",
+    "title": "Exercise During IVF: Safe Fitness & Movement Guidelines",
+    "youtubeUrl": "https://www.youtube.com/watch?v=exercise_101",
+    "duration": "8:40",
+    "channel": "Indira IVF",
+    "description": "Evidence-based exercise recommendations at each IVF cycle stage for optimal outcomes",
+    "language": "en",
+    "keywords": ["exercise", "fitness", "movement", "yoga", "workout", "physical activity", "safe exercise"]
+  },
+  {
+    "id": "en-stress-mental-health",
+    "title": "Stress & Mental Health During IVF: Coping Strategies",
+    "youtubeUrl": "https://www.youtube.com/watch?v=stress_mental_101",
+    "duration": "12:15",
+    "channel": "Indira IVF Counselling",
+    "description": "Managing stress, anxiety and depression throughout the IVF journey with practical strategies",
+    "language": "en",
+    "keywords": ["stress", "anxiety", "depression", "mental health", "counselling", "mindfulness", "meditation"]
+  },
+  {
+    "id": "en-partner-support",
+    "title": "Supporting Your Partner Through IVF: A Guide for Partners",
+    "youtubeUrl": "https://www.youtube.com/watch?v=partner_support_101",
+    "duration": "10:20",
+    "channel": "Indira IVF Counselling",
+    "description": "How partners can provide emotional and practical support throughout IVF treatment",
+    "language": "en",
+    "keywords": ["partner support", "spouse", "family", "communication", "emotional support", "teamwork"]
+  },
+  {
+    "id": "en-sex-intimacy-ivf",
+    "title": "Intimacy During IVF: Sex, Safety & Timing",
+    "youtubeUrl": "https://www.youtube.com/watch?v=intimacy_101",
     "duration": "8:50",
     "channel": "Dr. Mekhala Iyengar",
-    "description": "How endometriosis affects fertility and IVF success",
-    "keywords": ["endometriosis", "endo", "pelvic pain", "adenomyosis", "implantation failure"]
+    "description": "Understanding when it's safe to have intercourse during IVF and maintaining intimacy",
+    "language": "en",
+    "keywords": ["intimacy", "sex", "intercourse", "sexual health", "timing", "relationship"]
+  },
+  {
+    "id": "en-work-ivf",
+    "title": "Balancing Work and IVF: Managing Time & Disclosure",
+    "youtubeUrl": "https://www.youtube.com/watch?v=work_ivf_101",
+    "duration": "9:45",
+    "channel": "Indira IVF",
+    "description": "Practical strategies for managing work responsibilities while undergoing IVF treatment",
+    "language": "en",
+    "keywords": ["work", "career", "time off", "disclosure", "workplace", "leave", "productivity"]
+  },
+  {
+    "id": "hi-ivf-prakriya",
+    "title": "IVF प्रक्रिया समझाएं: संपूर्ण चरण-दर-चरण गाइड",
+    "youtubeUrl": "https://www.youtube.com/watch?v=ivf_hindi_101",
+    "duration": "13:20",
+    "channel": "डॉ. मेखला अयंगार",
+    "description": "IVF उपचार की संपूर्ण प्रक्रिया को विस्तार से समझाया गया है",
+    "language": "hi",
+    "keywords": ["ivf", "प्रक्रिया", "हार्मोन", "अंडा", "भ्रूण", "स्थानांतरण"]
+  },
+  {
+    "id": "hi-andey-nikalne-ki-prakriya",
+    "title": "अंडे निकालने की प्रक्रिया: क्या उम्मीद करें",
+    "youtubeUrl": "https://www.youtube.com/watch?v=egg_retrieval_hi_101",
+    "duration": "9:10",
+    "channel": "इंदिरा IVF",
+    "description": "अंडे निकालने की प्रक्रिया और रिकवरी के बारे में विस्तार जानकारी",
+    "language": "hi",
+    "keywords": ["अंडा", "निकालना", "प्रक्रिया", "वसूली", "दर्द", "संवेदनशीलता"]
+  },
+  {
+    "id": "hi-bhrun-sthanantran",
+    "title": "भ्रूण स्थानांतरण: आशा का दिन",
+    "youtubeUrl": "https://www.youtube.com/watch?v=embryo_hi_101",
+    "duration": "10:00",
+    "channel": "डॉ. मेखला अयंगार",
+    "description": "भ्रूण स्थानांतरण की प्रक्रिया और गर्भारोपण के बाद क्या होता है",
+    "language": "hi",
+    "keywords": ["भ्रूण", "स्थानांतरण", "गर्भारोपण", "दिन", "प्रक्रिया"]
+  },
+  {
+    "id": "hi-hormal-injection",
+    "title": "IVF इंजेक्शन: घर पर लगाने का तरीका",
+    "youtubeUrl": "https://www.youtube.com/watch?v=injection_hi_101",
+    "duration": "8:35",
+    "channel": "इंदिरा IVF नर्सिंग",
+    "description": "सही तकनीक से IVF दवाओं के इंजेक्शन लगाने की विस्तृत जानकारी",
+    "language": "hi",
+    "keywords": ["इंजेक्शन", "दवा", "हार्मोन", "तकनीक", "दर्द", "साइड इफेक्ट"]
+  },
+  {
+    "id": "hi-dono-hafte-ki-prateeksha",
+    "title": "दो हफ्ते की प्रतीक्षा: भावनात्मक समर्थन",
+    "youtubeUrl": "https://www.youtube.com/watch?v=tww_hi_101",
+    "duration": "12:05",
+    "channel": "इंदिरा IVF परामर्श",
+    "description": "दो हफ्ते की प्रतीक्षा के दौरान भावनात्मक सहायता और मानसिक स्वास्थ्य",
+    "language": "hi",
+    "keywords": ["प्रतीक्षा", "चिंता", "आशा", "परीक्षा", "भावना", "सहायता"]
+  },
+  {
+    "id": "hi-ahar-poshan",
+    "title": "IVF के दौरान सही आहार और पोषण",
+    "youtubeUrl": "https://www.youtube.com/watch?v=diet_hi_101",
+    "duration": "11:40",
+    "channel": "इंदिरा IVF पोषण",
+    "description": "IVF सफलता के लिए सही खाने की आदतें और पोषक तत्वों की जानकारी",
+    "language": "hi",
+    "keywords": ["आहार", "पोषण", "खाना", "सप्लीमेंट", "स्वास्थ्य", "फल", "सब्जी"]
+  },
+  {
+    "id": "hi-pcos-aur-ivf",
+    "title": "PCOS और IVF: विशेष उपचार विकल्प",
+    "youtubeUrl": "https://www.youtube.com/watch?v=pcos_hi_101",
+    "duration": "13:15",
+    "channel": "डॉ. मेखला अयंगार",
+    "description": "PCOS की स्थिति में IVF उपचार के विशेष तरीके और सफलता की रणनीति",
+    "language": "hi",
+    "keywords": ["pcos", "हार्मोन", "अनियमित", "उपचार", "प्रोटोकॉल", "सफलता"]
+  },
+  {
+    "id": "hi-nakam-chakra-iske-baad",
+    "title": "असफल चक्र के बाद: अगला कदम क्या है?",
+    "youtubeUrl": "https://www.youtube.com/watch?v=failed_hi_101",
+    "duration": "14:25",
+    "channel": "डॉ. मेखला अयंगार",
+    "description": "असफल उपचार चक्र के बाद क्या हुआ यह समझना और अगला कदम",
+    "language": "hi",
+    "keywords": ["असफल", "नकारात्मक", "परिणाम", "अगली बार", "सलाह", "उम्मीद"]
+  },
+  {
+    "id": "hi-garbhpat-dukh",
+    "title": "गर्भपात: चिकित्सा और भावनात्मक सहायता",
+    "youtubeUrl": "https://www.youtube.com/watch?v=miscarriage_hi_101",
+    "duration": "15:10",
+    "channel": "इंदिरा IVF परामर्श",
+    "description": "गर्भ हानि के बाद चिकित्सीय और भावनात्मक सहायता प्रदान करना",
+    "language": "hi",
+    "keywords": ["गर्भपात", "नुकसान", "दुख", "समर्थन", "परामर्श", "भावना"]
+  },
+  {
+    "id": "kn-ivf-prakriya",
+    "title": "IVF ಪ್ರಕ್ರಿಯೆ: ಹಂತ-ಹಂತದ ಮಾರ್ಗದರ್ಶಿ",
+    "youtubeUrl": "https://www.youtube.com/watch?v=ivf_kn_101",
+    "duration": "12:50",
+    "channel": "ಡಾ. ಮೇಖಲಾ ಅಯ್ಯಂಗಾರ್",
+    "description": "IVF ಚಿಕಿತ್ಸೆಯ ಸಂಪೂರ್ಣ ಪ್ರಕ್ರಿಯೆ ವಿವರವಾಗಿ ವಿವರಿಸಲಾಗಿದೆ",
+    "language": "kn",
+    "keywords": ["ivf", "ಪ್ರಕ್ರಿಯೆ", "ಹಾರ್ಮೋನ್", "ಮೊಟ್ಟೆ", "ಭ್ರೂಣ", "ವರ್ಗಾವಣೆ"]
+  },
+  {
+    "id": "kn-motte-nikalne",
+    "title": "ಮೊಟ್ಟೆ ಹೊರತೆಗೆಯುವ ಪ್ರಕ್ರಿಯೆ: ಏನು ನಿರೀಕ್ಷಿಸಬೇಕು",
+    "youtubeUrl": "https://www.youtube.com/watch?v=egg_kn_101",
+    "duration": "9:05",
+    "channel": "ಇಂದಿರಾ IVF",
+    "description": "ಮೊಟ್ಟೆ ಹೊರತೆಗೆಯುವ ಪ್ರಕ್ರಿಯೆ ಮತ್ತು ಚೇತನೆಗೆ ಬರುವಿಕೆ",
+    "language": "kn",
+    "keywords": ["ಮೊಟ್ಟೆ", "ಪ್ರಕ್ರಿಯೆ", "ನೋವು", "ಚೇತನೆ", "ಇಞ್ಜೆক್ಷನ್"]
+  },
+  {
+    "id": "kn-bhrun-thransfer",
+    "title": "ಭ್ರೂಣ ವರ್ಗಾವಣೆ: ಆಶೆಯ ದಿನ",
+    "youtubeUrl": "https://www.youtube.com/watch?v=embryo_kn_101",
+    "duration": "10:15",
+    "channel": "ಡಾ. ಮೇಖಲಾ ಅಯ್ಯಂಗಾರ್",
+    "description": "ಭ್ರೂಣ ವರ್ಗಾವಣೆಯ ಪ್ರಕ್ರಿಯೆ ಮತ್ತು ನಿರೋಪಣೆಯ ನಂತರ ಏನು ಸಂಭವಿಸುತ್ತದೆ",
+    "language": "kn",
+    "keywords": ["ಭ್ರೂಣ", "ವರ್ಗಾವಣೆ", "ನಿರೋಪಣೆ", "ದಿನ", "ಪ್ರಕ್ರಿಯೆ"]
+  },
+  {
+    "id": "kn-injection-guide",
+    "title": "IVF ಇಂಜೆಕ್ಷನ್: ಮನೆಯಲ್ಲಿ ತೀಕ್ಷ್ಣ ಮಾಡುವ ಮಾರ್ಗ",
+    "youtubeUrl": "https://www.youtube.com/watch?v=injection_kn_101",
+    "duration": "8:40",
+    "channel": "ಇಂದಿರಾ IVF ನರ್ಸಿಂಗ್",
+    "description": "IVF ಔಷಧಿಗಳ ಇಂಜೆಕ್ಷನ್ ನೀಡುವ ಸರಿಯಾದ ವಿಧಾನ",
+    "language": "kn",
+    "keywords": ["ಇಂಜೆಕ್ಷನ್", "ಔಷಧಿ", "ಹಾರ್ಮೋನ್", "ವಿಧಾನ", "ನೋವು"]
+  },
+  {
+    "id": "kn-duve-saptaha-prateeeksha",
+    "title": "ಎರಡು ವಾರಗಳ ಪ್ರತೀಕ್ಷೆ: ಭಾವನೆಯ ಸಹಾಯ",
+    "youtubeUrl": "https://www.youtube.com/watch?v=tww_kn_101",
+    "duration": "12:20",
+    "channel": "ಇಂದಿರಾ IVF ಪರಾಮರ್ಶೆ",
+    "description": "ಎರಡು ವಾರಗಳ ಪ್ರತೀಕ್ಷೆಯ ಸಮಯದಲ್ಲಿ ಭಾವನೆಯ ಸಹಾಯ ಮತ್ತು ಮನಸ್ಸಿನ ಆರೋಗ್ಯ",
+    "language": "kn",
+    "keywords": ["ಪ್ರತೀಕ್ಷೆ", "ಆತಂಕ", "ಆಶೆ", "ಪರೀಕ್ಷೆ", "ಭಾವನೆ", "ಸಹಾಯ"]
+  },
+  {
+    "id": "kn-aahar-pushti",
+    "title": "IVF ಸಮಯದಲ್ಲಿ ಸರಿಯಾದ ಆಹಾರ ಮತ್ತು ಪೋಷಣೆ",
+    "youtubeUrl": "https://www.youtube.com/watch?v=diet_kn_101",
+    "duration": "11:55",
+    "channel": "ಇಂದಿರಾ IVF ಪೋಷಣೆ",
+    "description": "IVF ಯಶಸ್ಸಿನ ಸಂದರ್ಭದಲ್ಲಿ ಸರಿಯಾದ ಆಹಾರ ಮತ್ತು ಪೋಷಣೆ",
+    "language": "kn",
+    "keywords": ["ಆಹಾರ", "ಪೋಷಣೆ", "ಸ್ಯೂಪ್ಪ್ಲಿಮೆಂಟ್", "ಆರೋಗ್ಯ", "ಹಣ್ಣು"]
+  },
+  {
+    "id": "kn-pcos-ivf",
+    "title": "PCOS ಮತ್ತು IVF: ವಿಶೇಷ ಚಿಕಿತ್ಸೆ ಆಯ್ಕೆ",
+    "youtubeUrl": "https://www.youtube.com/watch?v=pcos_kn_101",
+    "duration": "13:40",
+    "channel": "ಡಾ. ಮೇಖಲಾ ಅಯ್ಯಂಗಾರ್",
+    "description": "PCOS ಪರಿಸ್ಥಿತಿಯಲ್ಲಿ IVF ಚಿಕಿತ್ಸೆಯ ವಿಶೇಷ ವಿಧಾನ",
+    "language": "kn",
+    "keywords": ["pcos", "ಹಾರ್ಮೋನ್", "ಅನಿಯಮಿತ", "ಚಿಕಿತ್ಸೆ", "ಯಶಸ್ಸು"]
+  },
+  {
+    "id": "kn-asaphala-chakra",
+    "title": "ವಿಫಲ ಚಕ್ರದ ನಂತರ: ಮುಂದಿನ ಹೆಜ್ಜೆ ಏನು?",
+    "youtubeUrl": "https://www.youtube.com/watch?v=failed_kn_101",
+    "duration": "14:50",
+    "channel": "ಡಾ. ಮೇಖಲಾ ಅಯ್ಯಂಗಾರ್",
+    "description": "ವಿಫಲ ಚಿಕಿತ್ಸೆ ಚಕ್ರದ ನಂತರ ಮುಂದಿನ ಕ್ರಿಯೆಗಳು",
+    "language": "kn",
+    "keywords": ["ವಿಫಲ", "ನಕಾರಾತ್ಮಕ", "ಫಲಿತಾಂಶ", "ಮುಂದಿನ", "ಸಲಾಹ"]
+  },
+  {
+    "id": "en-lab-tests",
+    "title": "IVF Lab Tests: Understanding Your Blood Work",
+    "youtubeUrl": "https://www.youtube.com/watch?v=lab_tests_101",
+    "duration": "10:35",
+    "channel": "Dr. Mekhala Iyengar",
+    "description": "Understanding hormone levels, ultrasound results and what each test means",
+    "language": "en",
+    "keywords": ["lab tests", "blood work", "hormones", "amh", "fsh", "lh", "estrogen", "ultrasound"]
+  },
+  {
+    "id": "en-uterine-health",
+    "title": "Uterine Health & Endometrium: Preparing for Transfer",
+    "youtubeUrl": "https://www.youtube.com/watch?v=uterine_health_101",
+    "duration": "9:20",
+    "channel": "Dr. Mekhala Iyengar",
+    "description": "Understanding endometrial thickness, uterine polyps and preparing the uterus for embryo transfer",
+    "language": "en",
+    "keywords": ["uterine", "endometrium", "polyps", "fibroids", "thickness", "preparation", "transfer"]
+  },
+  {
+    "id": "en-genetic-testing",
+    "title": "Genetic Testing in IVF: PGT-A, PGT-M and PGT-SR",
+    "youtubeUrl": "https://www.youtube.com/watch?v=genetic_testing_101",
+    "duration": "12:45",
+    "channel": "Dr. Mekhala Iyengar",
+    "description": "Understanding genetic screening options and how they improve IVF outcomes",
+    "language": "en",
+    "keywords": ["genetic testing", "pgt", "chromosomes", "abnormalities", "screening", "biopsy"]
+  },
+  {
+    "id": "en-recurrent-loss",
+    "title": "Recurrent Miscarriage: Causes and Solutions",
+    "youtubeUrl": "https://www.youtube.com/watch?v=recurrent_loss_101",
+    "duration": "13:20",
+    "channel": "Dr. Mekhala Iyengar",
+    "description": "Understanding recurrent pregnancy loss and advanced diagnostic and treatment options",
+    "language": "en",
+    "keywords": ["recurrent loss", "miscarriage", "chromosomal", "immunological", "thrombophilia", "treatment"]
+  },
+  {
+    "id": "en-uterine-artery",
+    "title": "Uterine Artery Doppler: Understanding Blood Flow Assessment",
+    "youtubeUrl": "https://www.youtube.com/watch?v=doppler_101",
+    "duration": "8:15",
+    "channel": "Dr. Mekhala Iyengar",
+    "description": "What doppler studies mean and how they guide IVF protocols",
+    "language": "en",
+    "keywords": ["doppler", "blood flow", "uterine artery", "resistance", "assessment", "protocol"]
+  },
+  {
+    "id": "en-hysteroscopy",
+    "title": "Hysteroscopy: When It's Needed and What to Expect",
+    "youtubeUrl": "https://www.youtube.com/watch?v=hysteroscopy_101",
+    "duration": "7:50",
+    "channel": "Dr. Mekhala Iyengar",
+    "description": "Understanding when hysteroscopy is recommended and what the procedure involves",
+    "language": "en",
+    "keywords": ["hysteroscopy", "procedure", "polyp", "septum", "adhesions", "diagnosis"]
+  },
+  {
+    "id": "en-laparoscopy",
+    "title": "Laparoscopy: Diagnostic and Therapeutic Options",
+    "youtubeUrl": "https://www.youtube.com/watch?v=laparoscopy_101",
+    "duration": "9:40",
+    "channel": "Dr. Mekhala Iyengar",
+    "description": "Laparoscopic surgery for diagnosis of endometriosis, adhesions and treatment options",
+    "language": "en",
+    "keywords": ["laparoscopy", "surgery", "diagnostic", "endometriosis", "adhesions", "minimally invasive"]
+  },
+  {
+    "id": "en-ksm-test",
+    "title": "Semen Analysis: Understanding Your Partner's Test Results",
+    "youtubeUrl": "https://www.youtube.com/watch?v=semen_analysis_101",
+    "duration": "8:25",
+    "channel": "Dr. Mekhala Iyengar",
+    "description": "Interpreting semen analysis results: count, motility, morphology and what they mean",
+    "language": "en",
+    "keywords": ["semen analysis", "sperm count", "motility", "morphology", "results", "interpretation"]
+  },
+  {
+    "id": "en-immunological-factors",
+    "title": "Immunological Factors in Infertility: When It Matters",
+    "youtubeUrl": "https://www.youtube.com/watch?v=immunological_101",
+    "duration": "11:30",
+    "channel": "Dr. Mekhala Iyengar",
+    "description": "Understanding NK cells, antiphospholipid syndrome and immunological approaches",
+    "language": "en",
+    "keywords": ["immunological", "nk cells", "antiphospholipid", "immune system", "testing", "treatment"]
+  },
+  {
+    "id": "en-lifestyle-preconception",
+    "title": "Pre-IVF Lifestyle: 3-Month Preparation Protocol",
+    "youtubeUrl": "https://www.youtube.com/watch?v=preconception_101",
+    "duration": "14:15",
+    "channel": "Indira IVF",
+    "description": "Comprehensive 3-month pre-IVF preparation including diet, supplements, and lifestyle",
+    "language": "en",
+    "keywords": ["preconception", "preparation", "lifestyle", "3 months", "protocol", "optimize"]
+  },
+  {
+    "id": "en-complementary-medicine",
+    "title": "Complementary Therapies in IVF: Acupuncture, Herbs & More",
+    "youtubeUrl": "https://www.youtube.com/watch?v=complementary_101",
+    "duration": "10:50",
+    "channel": "Indira IVF",
+    "description": "Evidence-based complementary and alternative therapies that may support IVF",
+    "language": "en",
+    "keywords": ["acupuncture", "herbs", "complementary", "alternative", "therapy", "evidence"]
+  },
+  {
+    "id": "en-miscarriage-investigation",
+    "title": "After Miscarriage: Investigation & Next Steps",
+    "youtubeUrl": "https://www.youtube.com/watch?v=miscarriage_investigation_101",
+    "duration": "11:20",
+    "channel": "Dr. Mekhala Iyengar",
+    "description": "When to test after miscarriage, what investigations to do, and planning next cycle",
+    "language": "en",
+    "keywords": ["miscarriage", "investigation", "testing", "causes", "next cycle", "emotional"]
+  },
+  {
+    "id": "en-unexplained-infertility",
+    "title": "Unexplained Infertility: Diagnosis & Treatment Strategies",
+    "youtubeUrl": "https://www.youtube.com/watch?v=unexplained_101",
+    "duration": "12:10",
+    "channel": "Dr. Mekhala Iyengar",
+    "description": "Understanding unexplained infertility and advanced diagnostic approaches",
+    "language": "en",
+    "keywords": ["unexplained", "infertility", "diagnosis", "ivf success", "advanced", "testing"]
+  },
+  {
+    "id": "en-cost-insurance",
+    "title": "IVF Cost Breakdown: Insurance & Financial Planning",
+    "youtubeUrl": "https://www.youtube.com/watch?v=cost_insurance_101",
+    "duration": "9:15",
+    "channel": "Indira IVF",
+    "description": "Understanding IVF costs, insurance coverage, and financial planning strategies",
+    "language": "en",
+    "keywords": ["cost", "insurance", "financial", "planning", "payment", "coverage"]
+  },
+  {
+    "id": "en-natural-ivf",
+    "title": "Natural IVF & Minimal Stimulation: Is It Right for You?",
+    "youtubeUrl": "https://www.youtube.com/watch?v=natural_ivf_101",
+    "duration": "10:45",
+    "channel": "Dr. Mekhala Iyengar",
+    "description": "Understanding natural cycle IVF, minimal stimulation and when these protocols are appropriate",
+    "language": "en",
+    "keywords": ["natural ivf", "minimal stimulation", "micro ivf", "alternative protocol"]
+  },
+  {
+    "id": "en-fertility-preservation",
+    "title": "Fertility Preservation: Egg & Sperm Banking Before Cancer",
+    "youtubeUrl": "https://www.youtube.com/watch?v=fertility_preservation_101",
+    "duration": "11:25",
+    "channel": "Dr. Mekhala Iyengar",
+    "description": "Egg and sperm freezing for cancer patients and fertility preservation options",
+    "language": "en",
+    "keywords": ["fertility preservation", "egg freezing", "sperm banking", "cancer", "future"]
+  },
+  {
+    "id": "en-donor-gametes",
+    "title": "Donor Eggs & Donor Sperm: Understanding Your Options",
+    "youtubeUrl": "https://www.youtube.com/watch?v=donor_gametes_101",
+    "duration": "13:05",
+    "channel": "Dr. Mekhala Iyengar",
+    "description": "Comprehensive guide to using donor eggs, donor sperm and success rates",
+    "language": "en",
+    "keywords": ["donor eggs", "donor sperm", "gamete donation", "success rates", "process"]
+  },
+  {
+    "id": "en-surrogacy",
+    "title": "Surrogacy: Legal, Emotional & Medical Considerations",
+    "youtubeUrl": "https://www.youtube.com/watch?v=surrogacy_101",
+    "duration": "14:30",
+    "channel": "Indira IVF Counselling",
+    "description": "Complete guide to gestational surrogacy including legal, emotional and medical aspects",
+    "language": "en",
+    "keywords": ["surrogacy", "gestational", "legal", "emotional", "medical", "process"]
+  },
+  {
+    "id": "en-iui-vs-ivf",
+    "title": "IUI vs IVF: When to Choose Which Treatment",
+    "youtubeUrl": "https://www.youtube.com/watch?v=iui_vs_ivf_101",
+    "duration": "9:50",
+    "channel": "Dr. Mekhala Iyengar",
+    "description": "Comparing IUI and IVF treatments, success rates and when each is appropriate",
+    "language": "en",
+    "keywords": ["iui", "ivf", "comparison", "success rates", "choice", "decision"]
+  },
+  {
+    "id": "en-repeat-ivf-failure",
+    "title": "Repeated IVF Failure: Causes and Advanced Investigations",
+    "youtubeUrl": "https://www.youtube.com/watch?v=rvf_101",
+    "duration": "12:55",
+    "channel": "Dr. Mekhala Iyengar",
+    "description": "When IVF keeps failing: investigations, causes and advanced treatment strategies",
+    "language": "en",
+    "keywords": ["rvf", "repeated failure", "investigation", "causes", "solutions", "advanced"]
+  },
+  {
+    "id": "en-lgbtq-family",
+    "title": "Building a Family as LGBTQ+: IVF & Legal Options",
+    "youtubeUrl": "https://www.youtube.com/watch?v=lgbtq_family_101",
+    "duration": "13:40",
+    "channel": "Indira IVF Counselling",
+    "description": "LGBTQ+ family building options including IVF, surrogacy and legal considerations",
+    "language": "en",
+    "keywords": ["lgbtq", "family building", "legal", "options", "inclusive", "support"]
+  },
+  {
+    "id": "hi-lab-parikshan",
+    "title": "IVF लैब परीक्षण: अपने ब्लड वर्क को समझें",
+    "youtubeUrl": "https://www.youtube.com/watch?v=lab_hi_101",
+    "duration": "10:50",
+    "channel": "डॉ. मेखला अयंगार",
+    "description": "हार्मोन के स्तर और अल्ट्रासाउंड परिणाम समझना",
+    "language": "hi",
+    "keywords": ["लैब", "परीक्षण", "खून", "हार्मोन", "amh", "fsh"]
+  },
+  {
+    "id": "hi-female-reproductive",
+    "title": "महिला प्रजनन स्वास्थ्य: बुनियादी जानकारी",
+    "youtubeUrl": "https://www.youtube.com/watch?v=female_repro_hi_101",
+    "duration": "11:15",
+    "channel": "डॉ. मेखला अयंगार",
+    "description": "महिला प्रजनन प्रणाली और मासिक धर्म चक्र की व्याख्या",
+    "language": "hi",
+    "keywords": ["प्रजनन", "स्वास्थ्य", "अंडाशय", "गर्भाशय", "चक्र", "मासिक"]
+  },
+  {
+    "id": "hi-male-reproductive",
+    "title": "पुरुष प्रजनन स्वास्थ्य: बुनियादी जानकारी",
+    "youtubeUrl": "https://www.youtube.com/watch?v=male_repro_hi_101",
+    "duration": "9:45",
+    "channel": "डॉ. मेखला अयंगार",
+    "description": "पुरुष प्रजनन प्रणाली और शुक्राणु उत्पादन",
+    "language": "hi",
+    "keywords": ["पुरुष", "प्रजनन", "शुक्राणु", "प्रोस्टेट", "स्वास्थ्य"]
+  },
+  {
+    "id": "kn-lab-pariksha",
+    "title": "IVF ಲ್যಾಬ್ ಪರೀಕ್ಷೆ: ನಿಮ್ಮ ರಕ್ತ ಕಾರ್ಯ ಅರ್ಥಮಾಡಿಕೊಳ್ಳಿ",
+    "youtubeUrl": "https://www.youtube.com/watch?v=lab_kn_101",
+    "duration": "10:40",
+    "channel": "ಡಾ. ಮೇಖಲಾ ಅಯ್ಯಂಗಾರ್",
+    "description": "ಹಾರ್ಮೋನ್ ಮಟ್ಟ ಮತ್ತು ಪರೀಕ್ಷೆಯ ಫಲಿತಾಂಶಗಳನ್ನು ಅರ್ಥಮಾಡಿಕೊಳ್ಳುವುದು",
+    "language": "kn",
+    "keywords": ["ಲ್ಯಾಬ್", "ಪರೀಕ್ಷೆ", "ರಕ್ತ", "ಹಾರ್ಮೋನ್", "ಫಲಿತಾಂಶ"]
+  },
+  {
+    "id": "kn-female-health",
+    "title": "ಮಹಿಳೆ ಸಂತಾನೋತ್ಪತ್ತಿ ಆರೋಗ್ಯ: ಮೂಲಭೂತ ಮಾಹಿತಿ",
+    "youtubeUrl": "https://www.youtube.com/watch?v=female_kn_101",
+    "duration": "11:30",
+    "channel": "ಡಾ. ಮೇಖಲಾ ಅಯ್ಯಂಗಾರ್",
+    "description": "ಮಹಿಳೆ ಸಂತಾನೋತ್ಪತ್ತಿ ವ್ಯವಸ್ಥೆ ಮತ್ತು ಋತುಚಕ್ರ",
+    "language": "kn",
+    "keywords": ["ಮಹಿಳೆ", "ಸಂತಾನೋತ್ಪತ್ತಿ", "ಅಂಡಾಶಯ", "ಗರ್ಭಾಶಯ", "ಚಕ್ರ"]
   }
 ]

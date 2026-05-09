@@ -8,6 +8,7 @@ export interface Video {
   duration: string
   channel: string
   description: string
+  language: 'en' | 'hi' | 'kn'
   keywords: string[]
 }
 
