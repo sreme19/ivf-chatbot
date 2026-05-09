@@ -1,0 +1,137 @@
+[
+  {
+    "id": "ivf-process-overview",
+    "title": "IVF Process Explained: Step-by-Step Guide",
+    "youtubeUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    "duration": "8:45",
+    "channel": "Dr. Mekhala Iyengar",
+    "description": "Complete overview of the IVF process from start to finish",
+    "keywords": ["ivf process", "how ivf works", "ivf steps", "ivf timeline", "ivf overview"]
+  },
+  {
+    "id": "egg-retrieval",
+    "title": "Egg Retrieval Procedure: What to Expect",
+    "youtubeUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    "duration": "6:20",
+    "channel": "Indira IVF",
+    "description": "Detailed explanation of the egg retrieval (egg pickup) procedure",
+    "keywords": ["egg retrieval", "egg pickup", "oocyte retrieval", "procedure", "recovery"]
+  },
+  {
+    "id": "embryo-transfer",
+    "title": "Embryo Transfer: The Day of Hope",
+    "youtubeUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    "duration": "7:10",
+    "channel": "Dr. Mekhala Iyengar",
+    "description": "Understanding embryo transfer procedure and what happens after",
+    "keywords": ["embryo transfer", "et procedure", "transfer day", "embryo implantation", "blastocyst"]
+  },
+  {
+    "id": "two-week-wait",
+    "title": "The Two-Week Wait: Coping Emotionally",
+    "youtubeUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    "duration": "9:30",
+    "channel": "Indira IVF Counselling",
+    "description": "Mental health support and coping strategies during the two-week wait",
+    "keywords": ["two week wait", "2ww", "emotional support", "anxiety", "beta test", "wait period", "implantation"]
+  },
+  {
+    "id": "hormone-injections",
+    "title": "IVF Injections: Administration Guide",
+    "youtubeUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    "duration": "5:45",
+    "channel": "Indira IVF Nursing",
+    "description": "How to self-administer IVF medications and manage side effects",
+    "keywords": ["injections", "medications", "gonadotropins", "fsh", "lh", "hormone injections", "self-injection", "injection technique"]
+  },
+  {
+    "id": "ohss-prevention",
+    "title": "Ovarian Hyperstimulation Syndrome (OHSS): Prevention & Management",
+    "youtubeUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    "duration": "7:55",
+    "channel": "Dr. Mekhala Iyengar",
+    "description": "Understanding OHSS symptoms, prevention, and what to do if it occurs",
+    "keywords": ["ohss", "hyperstimulation", "overstimulation", "symptoms", "prevention", "bloating", "nausea"]
+  },
+  {
+    "id": "diet-lifestyle",
+    "title": "IVF Diet & Lifestyle: Optimizing Your Chances",
+    "youtubeUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    "duration": "8:20",
+    "channel": "Indira IVF Nutrition",
+    "description": "Nutrition, exercise, sleep, and lifestyle tips during IVF",
+    "keywords": ["diet", "nutrition", "exercise", "lifestyle", "fertility", "healthy eating", "sleep"]
+  },
+  {
+    "id": "failed-cycle-next-steps",
+    "title": "After a Failed IVF Cycle: What's Next?",
+    "youtubeUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    "duration": "10:15",
+    "channel": "Dr. Mekhala Iyengar",
+    "description": "Understanding what went wrong and planning the next cycle",
+    "keywords": ["failed cycle", "negative result", "unsuccessful", "why did it fail", "next cycle", "repeat ivf"]
+  },
+  {
+    "id": "miscarriage-grief",
+    "title": "Coping with Miscarriage: Emotional & Medical Support",
+    "youtubeUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    "duration": "11:05",
+    "channel": "Indira IVF Counselling",
+    "description": "Emotional support and medical guidance after pregnancy loss",
+    "keywords": ["miscarriage", "loss", "grief", "emotional support", "positive beta", "sad news", "pregnancy loss"]
+  },
+  {
+    "id": "frozen-embryos",
+    "title": "Frozen Embryo Transfer (FET): Understanding the Options",
+    "youtubeUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    "duration": "6:50",
+    "channel": "Dr. Mekhala Iyengar",
+    "description": "What is FET, why freeze embryos, and the thawing process",
+    "keywords": ["frozen embryos", "fet", "freezing", "cryopreservation", "thaw", "frozen transfer"]
+  },
+  {
+    "id": "multiple-pregnancies",
+    "title": "Multiple Pregnancies from IVF: Twins & Higher Multiples",
+    "youtubeUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    "duration": "7:40",
+    "channel": "Dr. Mekhala Iyengar",
+    "description": "Understanding the risks and management of twin/multiple pregnancies",
+    "keywords": ["twins", "multiple pregnancy", "multiples", "higher order multiples", "selective reduction", "bfp"]
+  },
+  {
+    "id": "male-infertility",
+    "title": "Male Factor Infertility & IVF: ICSI Explained",
+    "youtubeUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    "duration": "8:05",
+    "channel": "Dr. Mekhala Iyengar",
+    "description": "Sperm issues and ICSI (intracytoplasmic sperm injection) treatment",
+    "keywords": ["male infertility", "low sperm count", "icsi", "sperm morphology", "motility", "fertilization failure"]
+  },
+  {
+    "id": "pcos-ivf",
+    "title": "PCOS & IVF: Special Considerations",
+    "youtubeUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    "duration": "9:20",
+    "channel": "Dr. Mekhala Iyengar",
+    "description": "Managing PCOS during IVF treatment and optimizing outcomes",
+    "keywords": ["pcos", "polycystic ovary syndrome", "hormonal imbalance", "irregular cycles", "pcos treatment"]
+  },
+  {
+    "id": "age-fertility",
+    "title": "Age & Fertility: Egg Quality and IVF Success Rates",
+    "youtubeUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    "duration": "7:25",
+    "channel": "Dr. Mekhala Iyengar",
+    "description": "How age affects fertility and IVF treatment outcomes",
+    "keywords": ["age", "egg quality", "amh", "egg reserve", "success rate", "age factor", "older mothers"]
+  },
+  {
+    "id": "endometriosis-ivf",
+    "title": "Endometriosis & IVF: Treatment Options",
+    "youtubeUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    "duration": "8:50",
+    "channel": "Dr. Mekhala Iyengar",
+    "description": "How endometriosis affects fertility and IVF success",
+    "keywords": ["endometriosis", "endo", "pelvic pain", "adenomyosis", "implantation failure"]
+  }
+]

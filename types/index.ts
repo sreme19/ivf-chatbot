@@ -9,6 +9,7 @@ export interface Message {
   timestamp: Date
   isEmergency?: boolean
   feedback?: 'helpful' | 'not_helpful'
+  videos?: Video[]
 }
 
 export interface ConversationMessage {
@@ -23,11 +24,21 @@ export interface ChatRequest {
   language?: Language
 }
 
+export interface Video {
+  id: string
+  title: string
+  youtubeUrl: string
+  duration: string
+  channel: string
+  description: string
+}
+
 export interface ChatResponse {
   response: string
   isEmergency: boolean
   emergencyMessage?: string
   retrievedChunks?: number
+  relatedVideos?: Video[]
 }
 
 // Knowledge base types

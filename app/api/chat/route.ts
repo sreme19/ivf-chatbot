@@ -3,6 +3,7 @@ import Anthropic from '@anthropic-ai/sdk'
 import { ChatRequest, ChatResponse, Language } from '@/types'
 import { detectEmergency } from '@/lib/emergency-detector'
 import { retrieveContext } from '@/lib/retrieval'
+import { retrieveVideos } from '@/lib/video-retrieval'
 import { buildSystemPrompt } from '@/lib/prompt-builder'
 import { validateResponse } from '@/lib/response-validator'
 import { isLanguage, DEFAULT_LANGUAGE } from '@/lib/i18n'
@@ -119,6 +120,9 @@ export async function POST(request: NextRequest): Promise<NextResponse<ChatRespo
     // Step 5: Validate response
     const validatedResponse = validateResponse(rawResponse)
 
+    // Step 6: Retrieve related videos (optional enhancement)
+    const relatedVideos = retrieveVideos(userMessage)
+
     // Emit analytics (fire and forget)
     emitAnalytics('question_asked').catch(() => {})
 
@@ -126,6 +130,7 @@ export async function POST(request: NextRequest): Promise<NextResponse<ChatRespo
       response: validatedResponse,
       isEmergency: false,
       retrievedChunks: chunks.length,
+      relatedVideos: relatedVideos.length > 0 ? relatedVideos : undefined,
     })
   } catch (error) {
     console.error('[api/chat] Claude API error:', error)

@@ -166,6 +166,7 @@ export default function ChatInterface({
           content: data.response,
           timestamp: new Date(),
           isEmergency: false,
+          videos: data.relatedVideos,
         }
         setMessages(prev => [...prev, assistantMsg])
         if (voiceOutEnabled && data.response) {
